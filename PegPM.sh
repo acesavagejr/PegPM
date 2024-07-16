@@ -4,9 +4,9 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-if [ $3 = -P ]; then
-    cd $4
-
+if [ $2 = -P ]; then
+    cd $3
+fi
 echo "Now installing $1.pmp"
 wget -q --show-progress https://github.com/acesavagejr/PegPM/raw/main/Projects/$1.pmp
 
@@ -26,4 +26,4 @@ echo -e "\e[0mIt seems that there was a protocall error"
 exit
 fi
 echo -e "\e[96m\e[1mInstalled!"
-echo -e "\e[0m$1.pmp is now installed in your current derectory"
+echo -e "\e[0m$1.pmp is now installed in your current directory"
