@@ -1,5 +1,6 @@
 #!/bin/bash
-cd ~/.PegPM
+cd ~/
+cd .PegPM
 rm PegPM.sh
 cd ~/
 echo "\e[1m\e[31m\e[5mWARNING! \e[25m\e[39mthis part requires sed!"
